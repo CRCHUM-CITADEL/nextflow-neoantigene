@@ -1,0 +1,2 @@
+workflow GENERATE_PEPTIDE_SEQUENCES {
+}

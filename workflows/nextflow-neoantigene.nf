@@ -3,7 +3,11 @@
     IMPORT MODULES / SUBWORKFLOWS / FUNCTIONS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+
 include { softwareVersionsToYAML } from '../subworkflows/nf-core/utils_nfcore_pipeline'
+include { GENERATE_DECILES } from '../subworkflows/local/generate_deciles'
+include { GENERATE_PEPTIDE_SEQUENCES } from '../subworkflows/local/generate_peptide_sequences'
+include { RUN_NEOANTIGEN_MODEL } from '../subworkflows/local/run_neoantigen_model'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
