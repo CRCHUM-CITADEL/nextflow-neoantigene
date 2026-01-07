@@ -1,0 +1,83 @@
+repository_type: pipeline
+
+nf_core_version: 3.5.1
+
+lint:
+  files_unchanged:
+    - .prettierignore
+    - CODE_OF_CONDUCT.md
+    - assets/nf-core-nextflow-neoantigene_logo_light.png
+    - docs/images/nf-core-nextflow-neoantigene_logo_light.png
+    - docs/images/nf-core-nextflow-neoantigene_logo_dark.png
+    - .github/ISSUE_TEMPLATE/bug_report.yml
+    - .github/CONTRIBUTING.md
+    - .github/PULL_REQUEST_TEMPLATE.md
+    - assets/email_template.txt
+    - docs/README.md
+    - LICENSE
+    - .prettierignore
+    - .prettierignore
+    - .prettierignore
+    - .github/CONTRIBUTING.md
+    - assets/sendmail_template.txt
+    - .github/CONTRIBUTING.md
+  nextflow_config: false
+  multiqc_config: false
+  files_exist:
+    - nextflow_schema.json
+    - docs/output.md
+    - docs/README.md
+    - docs/usage.md
+    - conf/igenomes.config
+    - conf/igenomes_ignored.config
+    - CODE_OF_CONDUCT.md
+    - assets/nf-core-nextflow-neoantigene_logo_light.png
+    - docs/images/nf-core-nextflow-neoantigene_logo_light.png
+    - docs/images/nf-core-nextflow-neoantigene_logo_dark.png
+    - .github/ISSUE_TEMPLATE/config.yml
+    - .github/workflows/awstest.yml
+    - .github/workflows/awsfulltest.yml
+    - LICENSE
+    - assets/email_template.html
+    - assets/sendmail_template.txt
+    - assets/email_template.txt
+    - conf/igenomes.config
+    - CITATIONS.md
+    - assets/multiqc_config.yml
+    - CHANGELOG.md
+  readme:
+    - nextflow_badge
+    - nfcore_template_badge
+  schema_lint: false
+  schema_params: false
+  schema_description: false
+  included_configs: false
+
+template:
+  org: crchum-citadel
+  name: nextflow-neoantigene
+  description: Pipeline nextflow pour projet neoantigene
+  author: Justin et Anthony
+  version: 1.0.0dev
+  force: true
+  outdir: .
+  skip_features:
+    - github_badges
+    - changelog
+    - license
+    - igenomes
+    - multiqc
+    - fastqc
+    - nf_schema
+    - nf_core_configs
+    - seqera_platform
+    - gpu
+    - codespaces
+    - vscode
+    - citations
+    - documentation
+    - rocrate
+    - email
+    - adaptivecard
+    - slackreport
+  is_nfcore: false
